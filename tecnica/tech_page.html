@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" href="css/master.css">
+    <title>Fexbox_Hint</title>
+  </head>
+  <body>
+    <div class="aside">
+
+    <nav id="navbar">
+      <header>Flex Box Hint</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduccion">Introduccion</a></li>
+        <li><a class="nav-link" href="#Conceptos_Básicos">Conceptos Básicos</a></li>
+        <li><a class="nav-link" href="#Elementos_flexbox">Elementos Flexbox</a></li>
+        <li><a class="nav-link" href="#Elemento_Padre">Elemento Padre</a></li>
+        <li><a class="nav-link" href="#Flex-direction">Flex-direction</a></li>
+        <li><a class="nav-link" href="#Flex-wrap">Flex-Wrap</a></li>
+        <li><a class="nav-link" href="#Flex-Flow">Flex-Flow</a></li>
+        <li><a class="nav-link" href="#Justify-Content">Justify-Content</a></li>
+        <li><a class="nav-link" href="#Align-items">Align-Items</a></li>
+        <li><a class="nav-link" href="#Align-Content">Align-Content</a></li>
+        <li><a class="nav-link" href="#Centrar">Centrar</a></li>
+        <li><a class="nav-link" href="#Elemento_child">Elemento child</a></li>
+        <li><a class="nav-link" href="#Order_property">Order Property</a></li>
+        <li><a class="nav-link" href="#Flex-grow">Flex-Grow</a></li>
+        <li><a class="nav-link" href="#Flex-shrink">Flex-Shrink</a></li>
+        <li><a class="nav-link" href="#flex-basis">Flex-Basis</a></li>
+        <li><a class="nav-link" href="#Flex">Flex</a></li>
+        <li><a class="nav-link" href="#Align-self">Align-Self</a></li>
+      </ul>
+      </div>
+    </nav>
+    <main id="main-doc">
+      <div>
+        <ul>
+
+          <li id="intro">
+            <section class="main-section" id="Introduccion">
+            <header>Introduccion</header><br>
+
+                <p>
+                  La propiedad <b>Flexible Box</b>, o <b>flexbox</b>, de CSS3 es un modo de diseño que permite colocar los elementos de una página para que se comporten de forma predecible cuando el diseño de la página debe acomodarse a diferentes tamaños de pantalla y diferentes dispositivos. Para muchas aplicaciones, el modelo "caja flexible" produce una mejora sobre el modelo "bloque" porque no utiliza la propiedad float, ni hace que los márgenes del contenedor flexible interfieran con los márgenes de sus contenidos.
+                </p><br>
+                <p>
+                  Muchos <b>diseñadores</b> verán que el modelo "caja flexible" es más sencillo de utilizar. Los elementos "hijos" de una "caja flexible" pueden colocarse en cualquier dirección y pueden tener dimensiones flexibles para adapterse al espacio visible. Posicionar los elementos "hijos" es por tanto mucho más sencillo, y los diseños complejos pueden hacerse más fácilmente y con código más limpio, ya que el orden de visualización de los elementos es independiente del orden que estos tengan en el código fuente. Esta independencia afecta intencionadamente únicamente a la representación visual, dejando el orden de locución y navegación a lo que diga el código fuente.
+                </p>
+                </section>
+              </li>
+
+          <hr align="center"/>
+
+          <li id="conceptos">
+            <section class="main-section" id="Conceptos_Básicos">
+            <header>Conceptos Básicos</header><br>
+            <h3>El Concepto de Cajas Flexibles</h3>
+            <p>
+              Lo que caracteriza un diseño flexible es su habilidad para alterar el ancho y alto de sus elementos para ajustarse lo mejor posible al espacio disponible en cualquier dispositivo. Un contenedor flexible expande sus elementos para rellenar el espacio libre, o los comprime para evitar que rebasen el área prevista.
+            </p><br>
+            <p>
+              El algoritmo del modelo de diseño de "cajas flexibles" no parte de niguna dirección predeterminada, al contrario de lo que ocurre con el modelo "bloque", que asume una disposición vertical de los elementos, o lo que pasa con el modelo "en línea", que asume una disposición horizontal. Mientras que el modelo "bloque" funciona bien para páginas, se queda muy corto cuando se trata de aplicaciones en las que hay que tener en cuenta el cambio de orientación del dispositivo o los cambios de tamaño realizados por los gestos del usuario. El modelo de "cajas flexibles" es más apropiado para diseños de pequeña escala, mientras que el (emergente) modelo "rejilla" es adecuado para diseños de gran escala. Ambos son parte del gran esfuerzo que el "CSS Working Group" está realizando para proveer de mayor interoperabilidad a las aplicaciones web con todo tipo de usuarios, distintos modos de escritura, y otras necesidades de flexibilidad.
+            </p>
+            <h4>El diseño en flexbox. </h4>
+            <p>Antes de flex box contabamos con 4 modos para posicionar elementos.</p><br>
+            <ol>
+              <li>In line. (para texto)</li>
+              <li>In block. (para seciones)</li>
+              <li>Table. (para una tabla en 2 dimensiones)</li>
+              <li>Position.(Para posicionar un elemento de forma explicita)</li>
+            </ol><br>
+            <p>La "flexibilidad" de flex box, hace mas fácil el posicionamiento de elementos así como el diseño responsivo. Sin usar float o position. </p>
+            </section>
+          </li><br>
+
+            <hr align="center"/>
+
+
+              <li id="elementos">
+            <section class="main-section" id="Elementos_flexbox">
+            <header>Elementos Flexbox</header><br>
+            <p>Para comenzar a usar el diseño en flexbox, solo hay que declararlo con: <code> "display: flex"</code> esto crea el contenedor</p><br><br>
+
+            <div class="container">
+              <div class="elemento">elemento 1</div>
+              <div class="elemento">elemento 2</div>
+              <div class="elemento">elemento 3</div>
+              <div class="elemento">elemento 4</div>
+              <div class="elemento">elemento 5</div> <br><br>
+              <p>El rectangulo "morado" es el elemento Padre. <br><br>
+              Los rectangulos azules son los elementos hijo.</p>
+             </div>
+             </section>
+             </li><br><br>
+
+            <hr align="center"/>
+
+             <li id="padre">
+               <section class="main-section" id="Elemento_Padre">
+            <header>Elemento Padre</header> (contenedor)<br><br>
+            <p>
+              El elemento padre o parent element, es el contenedor. El cual se hace flexible al declarar el <b>display:flex.</b>
+            </p><br>
+            <p> Estas son las propiedades del <b>contenendor flex</b>:</p><br>
+            <ol class="propiedades-flex">
+                <li><a class="link" href="#direccion">flex-direction</a></li>
+                <li><a class="link" href="#wrap">flex-wrap</a></li>
+                <li><a class="link" href="#flow">flex-flow</a></li>
+                <li><a class="link" href="#justify">justify-content</a></li>
+                <li><a class="link" href="#align">align-items</a></li>
+                <li><a class="link" href="#content">align-content</a></li>
+              </ol>
+              </section>
+          </li><br>
+
+        <hr align="center"/>
+
+          <li>
+            <section class="main-section" id="Flex-direction">
+            <header id="direccion">Flex-direction</header><br>
+            <p>
+              La flex-direction, se usa para indicar en que sentido queremos orientar los elementos. Los cuales pueden direccionarse en columnas o filas:
+            <code>  <b><i>flex-direction: row;</i></b></code> or <code><b><i>flex-direction: column;</i></b></code><br> <i>Nota:</i> Por defecto se direccionan en filas.
+            </p><br>
+            <div class="container2">
+              <div class="elemento">elemento 1</div>
+              <div class="elemento">elemento 2</div>
+              <div class="elemento">elemento 3</div>
+              <br><br>
+              <p>En este ejemplo se le dió a la propiedad "direction" el valor "column" lo cual resulta en una orientacion vertical. De arriba hacia abajo.<br><br>
+              "flex-direction: column;" </p><br><br>
+            </div><br>
+             <p>El valor reverse en la propiedad column da como resultado que se orienten de forma vertical pero comenzando desde abajo.</p>
+             <div class="container3">
+               <div class="elemento">elemento 1</div>
+               <div class="elemento">elemento 2</div>
+               <div class="elemento">elemento 3</div>
+               <p>"flex-direction: column-reverse;"</p>
+             </div><br>
+             <p>En el caso de la propiedad row, la dirección es en forma horizontal de izquierda a derecha pero si se le da el valor reverse comenzará de derecha a izquierda.</p>
+             <div class="container4">
+               <div class="elemento">elemento 1</div>
+               <div class="elemento">elemento 2</div>
+               <div class="elemento">elemento 3</div>
+               <div class="elemento">elemento 4</div>
+               <div class="elemento">elemento 5</div>
+               <p>"flex-direction: row-reverse;"</p>
+             </div>
+               </section>
+          </li>
+
+          <hr align="center"/>
+
+          <li id="wrap">
+            <section class="main-section" id="Flex-wrap">
+            <header>Flex-wrap</header>
+            <p>La propiedad wrap (envolver) nos ayuda para que los elementos modifiquen sus medidas y/o ubicación, de acuerdo al espacio que haya en el contenedor.</p>
+            <p><i>Nota: Las medidas del contenedor deben ser relativas, de otro modo no funcionara la propiedad wrap.</i></p>
+            <div class="container5">
+              <div class="elemento">elemento1</div>
+              <div class="elemento">elemento2</div>
+              <div class="elemento">elemento3</div>
+              <div class="elemento">elemento4</div>
+              <div class="elemento">elemento5</div>
+              <div class="elemento">elemento6</div>
+              <div class="elemento">elemento7</div>
+              <div class="elemento">elemento8</div>
+              <div class="elemento">elemento9</div>
+              <div class="elemento">elemento10</div>
+                <p>"<code>flex-wrap: wrap;</code>"</p>
+            </div>
+            <p>La propiedad <b>wrap</b> tiene el valor: no-wrap; la cual indica que no se aplicara dicha propiedad.</p>
+            <p>Otro valor de la propiedad wrap es: <b>wrap-reverse</b> Esta propiedad indica al navegador, que se acomodaran los elementos en forma inversa.(Esto en caso de que haya necesidad de reacomodarse.)</p>
+            </section>
+          </li>
+
+            <li id="flow">
+              <section class="main-section" id="Flex-Flow">
+            <header>Flex-flow</header>
+            <p>La propiedad <code><b>Flex-flow</b></code> es la forma "corta" de indicar la direccion de los elementos y si van a tener el valor wrap.</p>
+            <p>La sintaxis es la siguiente: <code><b>"flex-flow: row wrap;"</b></code> o <code><b>"flex-flow: column nowrap"</b></code> o <code><b>"flex-flow: row-reverse wrap"</b></code> etc. Acomodando los valores que así se requieran. </p>
+            </section>
+          </li>
+          <hr align="center"/>
+          <li id="justify">
+            <section class="main-section" id="Justify-Content">
+            <header>Justify-Content</header>
+            <p>Justify-content es la propiedad que nos brinda la opcion de acomodar los elementos a lo ancho del contenedor. Sobre el eje X y las opciones son:<b><i> flex-start, flex-end, center, space-around o space-between.</i></b></p>
+              <p>"justify-content: center;" El valor center, centra los elementos.</p>
+            <div class="container6">
+              <div class="elemento">elemento 1</div>
+              <div class="elemento">elemento 2</div>
+              <div class="elemento">elemento 3</div>
+            </div>
+            <p>En cambio si lo que queremos es enviar los elementos hasta la derecha del contenedor, esta es la opción. "justify-content: flex-end;" </p>
+            <div class="container7">
+              <div class="elemento">elemento 1</div>
+              <div class="elemento">elemento 2</div>
+              <div class="elemento">elemento 3</div>
+            </div>
+            <p>Aquí hice una pequeña trampa de esta forma: "flex-flow: row-reverse wrap;" y "justify-content: flex-end;" lo que es equivalente a: <br>
+              "justify-content: flex-start;"</p>
+            <div class="container8">
+              <div class="elemento">elemento 1</div>
+              <div class="elemento">elemento 2</div>
+              <div class="elemento">elemento 3</div>
+            </div>
+            <p>"justify-content: space-around;" Este valor nos permite acomodar los elementos manteniedo espacio al rededor.</p>
+            <div class="container8a">
+              <div class="elemento">elemento 1</div>
+              <div class="elemento">elemento 2</div>
+              <div class="elemento">elemento 3</div>
+            </div>
+            <p>"justify-content: space-between" Como podemos ver deja el espacio entre los elementos.</p>
+            <div class="container8b">
+              <div class="elemento">elemento 1</div>
+              <div class="elemento">elemento 2</div>
+              <div class="elemento">elemento 3</div>
+            </div>
+            </section>
+          </li>
+          <hr align="center"/>
+
+          <li id="align">
+            <section class="main-section" id="Align-items">
+            <header>Align-items</header>
+           <p>Y para acomodar los elementos de forma vertical sobre el eje "Y" agregamos la propiedad <b>align-items</b>,  que tiene como opciones: "<b>flex-start, flex-end, center, stretch o baseline."</b>
+           </p>
+           <p>En el ejemplo de abajo la sintaxis es así:"justify-content: center;" "align-items: flex-end;"</p> lo cual empuja a los elementos a la derecha del eje horizontal y al centro del vertical. Sin perder la caracteriztica de columna.
+           <div class="container9">
+             <div class="elemento">elemento 1</div>
+             <div class="elemento">elemento 2</div>
+             <div class="elemento">elemento 3</div>
+           </div>
+           <p>El valor stretch tiene este efecto: </p>
+           <div class="container10">
+             <div class="elemento">elemento 1</div>
+             <div class="elemento">elemento 2</div>
+             <div class="elemento">elemento 3</div>
+           </div>
+           <p>La propiedad algin-items con el valor baseline,  alinea los elementos con respecto a la base del texto: </p>
+           <div class="container11">
+             <div class="elementoa">1</div>
+             <div class="elementob">2</div>
+             <div class="elementoc">3</div>
+             <div class="elementod">1</div>
+             <div class="elementoe">2</div>
+             <div class="elementof">3</div>
+           </div>
+           </section>
+          </li>
+          <hr align="center"/>
+
+          <li id="content">
+            <section class="main-section" id="Align-Content">
+            <header>Align-content</header>
+            <p>La propiedad align-content sirve para alinear en filas, los items y el valor space-between los separa con el mismo espacio entre ellos:</p>
+            <div class="container12">
+              <div class="childa">elemento1</div>
+              <div class="childa">elemento2</div>
+              <div class="childa">elemento3</div>
+              <div class="childa">elemento4</div>
+              <div class="childa">elemento5</div>
+              <div class="childa">elemento6</div>
+              <div class="childa">elemento7</div>
+              <div class="childa">elemento8</div>
+              <div class="childa">elemento9</div>
+              <div class="childa">elemento10</div>
+            </div>
+            <p>Align-content tambien cuenta con la propiedad speace-around, esta nos sirve para poner espacio equidistante entre los elementos.</p>
+            <div class="container13">
+              <div class="childb">elemento1</div>
+              <div class="childb">elemento2</div>
+              <div class="childb">elemento3</div>
+              <div class="childb">elemento4</div>
+              <div class="childb">elemento5</div>
+              <div class="childb">elemento6</div>
+              <div class="childb">elemento7</div>
+              <div class="childb">elemento8</div>
+              <div class="childb">elemento9</div>
+            </div>
+            <p>El valor stretch de la propiedad Align-content. Estira los elementos para cubrir el contenedor así:</p>
+              <div class="container14">
+                <div class="hijox">stretch</div>
+                <div class="hijox">stretch</div>
+                <div class="hijox">stretch</div>
+                <div class="hijox">stretch</div>
+                <div class="hijox">stretch</div>
+                <div class="hijox">stretch</div>
+              </div>
+            <p>El valor center la propiedad align-content. Centra las filas de elementos;</p>
+            <div class="container15">
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+              <div class="hijox">center</div>
+            </div>
+            <p>El valor flex-start de la propiedad align-content. Lleva a  las filas de elementos al inicio del contenedor (arriba a la izquierda);</p>
+            <div class="container16">
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+              <div class="hijox">flex-start</div>
+            </div>
+            <p>Para que los items esten al final del contenedor se ocupa el valor: flex-end.</p>
+            <div class="container17">
+              <div class="hijox">flex-end</div>
+              <div class="hijox">flex-end</div>
+              <div class="hijox">flex-end</div>
+              <div class="hijox">flex-end</div>
+              <div class="hijox">flex-end</div>
+              <div class="hijox">flex-end</div>
+              <div class="hijox">flex-end</div>
+            </div>
+              </section>
+          </li>
+
+          <hr align="center"/>
+
+          <li id="centrar">
+            <section class="main-section" id="Centrar">
+            <header>Centrar</header>
+            Este es uno de los temas que a muchos nos rompe la cabeza. Centrar algo con flexbox es muy sencillo. Utilizamos: align-items: center; y justify-content: center; Lo que nos da el siguiente resultado:
+            <div class="container18">
+              <div class="hijocentrado">
+                <img src="http://kelas-karyawan-bali.kurikulum.org/_buku_manual/_baca_blob.php?book=lain&td=2&kodegb=109px-Tux-G2.jpg" alt=Tux"">
+              </div>
+            </div>
+            </section>
+          </li>
+
+          <hr/>
+
+          <li id="child">
+            <section class="main-section" id="Elemento_child">
+            <header>Elemento child</header>
+            <p>Los elementos "child" directos. Se convierten en elementos flexibles al declarar el contenedor (flex) </p>
+            <div class="container18">
+              <div class="hij0">a</div>
+              <div class="hij0">b</div>
+              <div class="hij0">c</div>
+              <div class="hij0">d</div>
+              <div class="hij0">e</div>
+            </div>
+
+            <p>Los elementos "flex hijo" tienen las siguientes propiedades:</p>
+
+
+            <ol>
+            <div class="container19">
+              <div class="hij01"><li><a href="#order">Order (orden)</a></li></div>
+              <div class="hij01"><li><a href="#flex-grow">flex-grow (tamaño)</a></li></div>
+              <div class="hij01"><li><a href="#flex-shrink">flex_shrink (reducción)</a></li></div>
+              <div class="hij01"><li><a href="#flex-basis">flex-basis</a></li></div>
+              <div class="hij01"><li><a href="#flex">flex</a></li></div>
+              <div class="hij01"><li><a href="#align-self">align-self</a></li></div>
+            </div>
+            </ol>
+            </section>
+          </li>
+          <li id="property">
+            <section class="main-section" id="Order_property">
+            <header>Order property</header>
+            <p>La Order property nos ayuda a ordenar los items a nuestra conveniencia.</p>
+            <div class="container20">
+              <div id="X" class="itema">left</div>
+              <div id="Y"class="itema">right</div>
+              <div id="Z" class="itema">Center</div>
+              <div id="W" class="itema">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            </div>
+            </section>
+          </li>
+
+          <li id="grow">
+            <section class="main-section" id="Flex-grow">
+            <header>Flex-grow</header>
+            <p>La propiedad flex-grow nos ayuda a "crecer" nuestros items, indicandole cuanto espacio tendrá:</p>
+             <p>En este ejemplo le dimos al elemento "right" flex-grow: 4; Lo que da como resultado que crezca más: <br></p>
+            <div class="container21">
+
+              <div id="X" class="itemb">left</div>
+              <div id="Y"class="itemb">right</div>
+              <div id="W" class="itemb">Center</div>
+              <div id="Z" class="itemb">up</div>
+            </div>
+            </section>
+          </li>
+
+
+          <li id="shrink">
+            <section class="main-section" id="Flex-shrink">
+            <header>Flex-shrink</header>
+            <p>La propiedad shrink viene siendo lo contrario de grow, nos ayuda a reducir el tamaño de el item que indiquemos.</p>
+            <div class="container22">
+              <div class="shr">1</div>
+              <div class="shr">2</div>
+              <div id="shra" class="shr">3</div>
+              <div class="shr">4</div>
+              <div class="shr">5</div>
+            </div>
+            </section>
+          </li><li id="basis">
+              <section class="main-section" id="flex-basis">
+            <header>Flex-basis</header>
+            <p>La propiedad Flex-basis sirve para indicar la medida inicial del item en cuestion.</p>
+            <p>En este ejemplo aunque el width de los tres elementos esta en 25%, el flex basis del item 1  esta en 50px.</p>
+              <div class="container23">
+                <div id="bass1" class="bass">1</div>
+                <div class="bass">2</div>
+                <div class="bass">3</div>
+                </div>
+            </section>
+          </li>
+
+
+            <li id="flex">
+              <section class="main-section" id="Flex">
+            <header>Flex</header>
+            <p>La propiedad flex es el metodo corto para flex-grow, flex shrink y flex-baseline.</p>
+            <p>Esta es la sintaxis: flex: 2 2 150px; El primer valor es el de flex-grow, el segundo el flex shrink y el tercero base-line.</p>
+            <div class="container24">
+              <div class="bass">1</div>
+              <div class="bass">2</div>
+              <div id="bass2" class="bass">3</div>
+              </div>
+
+            </section>
+          </li>
+
+            <li id="self">
+              <section class="main-section" id="Align-self">
+            <header>Align-self</header>
+            <div class="container25">
+              <div class="top1">top1</div>
+              <div class="mainc">
+              <div class="asaidel">asaide left</div>
+              <div class="maina">main</div>
+              <div class="asaider">asaid right</div>
+            </div>
+              <div class="foota">Foot</div>
+            </div>
+            </section>
+          </li>
+
+        </ul>
+      </div>
+    </main>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>

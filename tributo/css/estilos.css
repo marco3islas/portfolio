@@ -1,0 +1,71 @@
+body{
+  font-family: 'Modern Antiqua', cursive;
+}
+#main{
+  margin:25px auto;
+  padding: 30px;
+  background-color: rgba(113, 16, 45, 0.74);
+  border-radius: 10px;
+}
+
+.img-div{
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -15px;
+}
+#img-div{
+  display: flex;
+  flex-flow:wrap column;
+  align-items: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+img{
+  max-width: 100%;
+
+}
+.img-caption{
+  text-align: center;
+}
+.text{
+  width: 100%;
+  height: auto;
+  margin: auto;
+}
+
+.subtitulo{
+  width:100%;
+  height: auto;
+  font-size: 1em;
+  text-align: center;
+}
+main .subtitulo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.obras{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+.cierto{
+  box-sizing: border-box;
+  width: 350px;
+  margin: auto;
+  padding: auto;
+  height: auto;
+  background: rgba(26, 56, 125, 0.63);
+  border: 10px solid rgba(26, 56, 125, 0.83) ;
+  text-align: center;
+  }
+h2{
+  font-variant: small-caps;
+  font-weight: bold;
+}
+ul li{
+  font-style: italic;
+}
