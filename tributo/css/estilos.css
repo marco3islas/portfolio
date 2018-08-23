@@ -1,5 +1,5 @@
 body{
-  font-family: cursive;;
+  font-family: "Pacifico" 'Josefin Sans'
   font-weight: lighter;
 }
 #main{
@@ -69,6 +69,7 @@ main .subtitulo{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  line-height: 40px;
   }
   hr{
     height: 1px;
@@ -88,11 +89,17 @@ main .subtitulo{
 
 ul li{
   font-style: italic;
+
 }
 .footer{
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  margin-right: 25px;
+  padding: 5;
+  font-family: Arial;
+  font-size: 80%;
 }
 .footer  ul{
   display: flex;
