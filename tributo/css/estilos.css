@@ -1,7 +1,6 @@
 body{
   font-family: cursive;;
   font-weight: lighter;
-
 }
 #main{
   margin:25px auto;
@@ -66,10 +65,10 @@ main .subtitulo{
   align-items: center;
 }
 .obras{
-  margin-left: 400px;
+  margin-left: 30%;
   display: flex;
   flex-direction: column;
-  align-items: left;
+  justify-content: center;
   }
   hr{
     height: 1px;
@@ -86,10 +85,36 @@ main .subtitulo{
   border: 10px solid rgba(26, 56, 125, 0.83) ;
   text-align: center;
   }
-/*h2{
-  font-variant: small-caps;
-  font-weight: bold;
-}*/
+
 ul li{
   font-style: italic;
+}
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.footer  ul{
+  display: flex;
+  justify-content: space-around;
+  }
+  .footer li{
+    list-style: none;
+  }
+  .footer li a{
+    margin: 5px;
+    text-decoration: none;
+  }
+
+@media only screen and (max-width: 700px)
+{
+  .obras{
+   margin-left: 10px;
+  }
+  .cierto{
+    width: auto;
+    display: flex;
+    flex-flow: wrap;
+    text-align: left;
+  }
 }
