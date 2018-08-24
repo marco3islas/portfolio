@@ -1,6 +1,7 @@
 body{
   font-family: "Pacifico" 'Josefin Sans'
   font-weight: lighter;
+  min-width: 320px;
 }
 #main{
   margin:25px auto;
