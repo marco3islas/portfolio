@@ -6,7 +6,7 @@ body{
 #main{
   margin:25px auto;
   padding: 30px;
-  background-color: rgba(235, 238, 242, 0.74);
+  background-color: rgba(246, 241, 236, 0.74);
   border-radius: 10px;
   background: rgb(187, 192, 212);
 }
@@ -83,8 +83,9 @@ main .subtitulo{
   margin: auto;
   padding: auto;
   height: auto;
-  background: rgba(26, 56, 125, 0.63);
-  border: 10px solid rgba(26, 56, 125, 0.83) ;
+  line-height: 25px;
+  background: url("https://image.freepik.com/foto-gratis/textura-de-papel-viejo_1249-136.jpg") repeat ;
+  border: 10px solid rgba(71, 32, 6, 0.9) ;
   text-align: center;
   }
 
