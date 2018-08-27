@@ -2,10 +2,17 @@
   margin: 0;
   padding: 0;
 }
-.main{
+.backgroundimg{
   background-image: url("../img/keyboard.jpg");
-  filter: blur(3px);
-  z-index: 1;
+  background-size: cover;
+  display: block;
+  filter: blur(0px);
+  -webkit-filter: blur(4px);
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  position: absolute;
+  z-index: -2;
 }
 header{
   background: rgba(47, 37, 29, 0.5);
@@ -18,15 +25,13 @@ header{
   position: fixed;
   z-index: 2;
 }
-.head-contet{
-  z-index: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 600px;
+ .head-contet{
+  text-align: center;
   color: #FFF;
   text-shadow: 0 3px 5px rgb(215, 192, 148);
+  z-index: 1;
+  position: relative;
+  top: 300px;
 }
 #navbar ul{
   display: flex;
@@ -45,3 +50,36 @@ ul a{
   text-decoration: none;
   color: white;
   }
+.work{
+  display: grid;
+  grid-template: 1fr 1fr;
+  grid-gap: 1px;
+  background-color: rgb(3, 101, 191);
+  width: 70%;
+  height: auto;
+}
+.work-header{
+  justify-content: center;
+  margin-top: 50px;
+  grid-area: 1/1/2/4;
+  }
+.project{
+  width: 33.3%;
+  height: auto;
+  padding: 20px;
+  justify-content: space-around;
+  margin-left: 80px;
+}
+.tributo{
+  grid-area: 2/1/2/2;
+
+}
+.formulario{
+  grid-area: 2/2/3/3;
+}
+.landing{
+  grid-area: 3/1/4/2;
+}
+.tech{
+  grid-area: 3/2/4/3;
+}

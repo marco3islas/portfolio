@@ -1,113 +1,59 @@
-html,
-body {
-  background-color: #a9d7d1;
-  text-align: center;
-  font-family: 'Josefin Sans', sans-serif;
-  min-width: 320px;
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    min-width: 320px;
 }
-
-header {
-  font-size: 2em;
-  font-weight: bold;
-  margin: 20px;
-}
-
-#form-outer {
-  background-color: rgb(250, 250, 250);
-  margin: 0 auto;
-  border-radius: 4px;
-  width: 75%;
-  max-width: 900px;
-  padding: 10px;
-  padding-top: 20px;
-}
-
-.labels {
-  display: inline-block;
-  text-align: right;
-  width: 40%;
-  padding: 5px;
-  vertical-align: top;
-  margin-top: 10px;
-}
-
-.rightTab {
-  display: inline-block;
-  text-align: left;
-  width: 48%;
-  vertical-align: middle;
-}
-
-.input-field {
-  height: 20px;
-  width: 280px;
-  padding: 5px;
-  margin: 10px;
-  border: 1px solid #c0c0c0;
-  border-radius: 2px;
-}
-
-#userAge {
-  width: 40px;
-}
-
-.userRatings,
-input[type="checkbox"] {
-  float: left;
-  margin-right: 5px;
-}
-
-#submit {
-  background-color: #59ace0;
-  border-radius: 4px;
-  color: white;
-  font-size: 1em;
-  height: 40px;
-  width: 96px;
-  margin: 10px;
-  border: 0px solid;
-}
-
-.dropdown {
-  height: 35px;
-  width: 140px;
-  padding: 5px;
-  margin: 10px;
-  margin-top: 15px;
-  border: 1px solid #c0c0c0;
-  border-radius: 2px;
-}
-
-.radio, .checkbox {
-  position: relative;
-  left: -43px;
-  margin-left: 10px;
+.backgroundimg{
+  background-image: url("https://bombanoise.com/wp-content/uploads/2018/05/Portada.jpg");
+  background-size: cover;
   display: block;
-  padding-bottom: 10px;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  height: 800px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  z-index: -1;
+}
+h1, #description{
+  text-align: center;
+  color: Black;
+  text-shadow: 2px 5px 8px rgb(228, 223, 223);
 }
 
-@media screen and (max-width: 833px) {
-  .input-field {
-    width: 80%;
-  }
-  select {
-    width: 90%;
-  }
+.grid-container{
+  min-width: 300px;
+display: grid;
+height: auto;
+grid-template-columns: 1fr 2fr 1fr;
+grid-gap: 10px;
+color: white;
+/*background-color: rgba(19, 18, 18, 0.54);*/
+padding: 15px;
 }
-
-@media screen and (max-width: 520px) {
-  .labels {
-    width: 100%;
-    text-align: left;
-  }
-  .rightTab {
-    width: 80%;
-    float: left;
-  }
-  .input-field {
-    width: 100%;
-  }
-  select {
-    width: 100%;
-  }
+.item2{
+  grid-area:1/2/2/3;
+  background-color: rgba(19, 18, 18, 0.84);
+  display: flex;
+  flex-direction: column;
+  padding: 2px 5px ;
+}
+.item3{
+  grid-area: 2/2/3/3;
+  background: rgba(19, 18, 18, 0.84);
+  padding: 5px;
+}
+.item4{
+  grid-area: 3/2/4/3;
+  background-color: rgba(19, 18, 18, 0.74);
+  padding: 5px;
+}
+label{
+  font-weight: bold;
+}
+button{
+  float: right;
+  background: rgb(27, 118, 201);
+  border-radius: 10%;
+  width: 80px;
+  height: auto;
 }
