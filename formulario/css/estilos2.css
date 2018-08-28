@@ -6,7 +6,7 @@ body{
   background-image: url("https://bombanoise.com/wp-content/uploads/2018/05/Portada.jpg");
   background-size: cover;
   display: block;
-  filter: blur(5px);
+  filter: blur(3px);
   -webkit-filter: blur(5px);
   height: 800px;
   left: 0;

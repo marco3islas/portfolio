@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
 }
+body{
+  min-width: 320px;
+}
 .backgroundimg{
   background-image: url("../img/keyboard.jpg");
   background-size: cover;
@@ -53,33 +56,43 @@ ul a{
 .work{
   display: grid;
   grid-template: 1fr 1fr;
-  grid-gap: 1px;
-  background-color: rgb(3, 101, 191);
-  width: 70%;
+  grid-gap: 5px;
+  width: 100%;
   height: auto;
-}
-.work-header{
-  justify-content: center;
-  margin-top: 50px;
-  grid-area: 1/1/2/4;
+  justify-items: center;
+  margin-top: 650px;
+
   }
-.project{
-  width: 33.3%;
-  height: auto;
+
+  .work-header{
+    text-align: center;
+    margin-top: 50px;
+    grid-area: 1/1/2/4;
+    margin-bottom: 50px;
+    }
+
+.picture{
+  width: 100%;
+  border:solid 2px rgb(215, 192, 148);
   padding: 20px;
-  justify-content: space-around;
-  margin-left: 80px;
 }
 .tributo{
   grid-area: 2/1/2/2;
-
-}
+  }
 .formulario{
   grid-area: 2/2/3/3;
-}
+  }
 .landing{
   grid-area: 3/1/4/2;
 }
 .tech{
   grid-area: 3/2/4/3;
 }
+#projects a{
+  text-decoration: none;
+}
+.project-title{
+  text-align: center;
+  padding: 5px;
+  margin-bottom: 40px;
+  }
