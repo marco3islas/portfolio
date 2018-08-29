@@ -24,7 +24,7 @@ header{
   flex-flow: row wrap;
   justify-content: center;
   align-items: flex-end;
-  height: 100px;
+  height: auto;
   position: fixed;
   z-index: 2;
 }
@@ -43,7 +43,7 @@ header{
   #navbar ul li{
     list-style-type: none;
     font-size: 30px;
-    padding: 10px;
+    padding: 10px 80px ;
     }
 .links{
   display: flex;
@@ -59,9 +59,8 @@ ul a{
   grid-gap: 5px;
   width: 100%;
   height: auto;
-  justify-items: center;
   margin-top: 650px;
-
+  justify-content: center;
   }
 
   .work-header{
@@ -70,12 +69,16 @@ ul a{
     grid-area: 1/1/2/4;
     margin-bottom: 50px;
     }
-
+.project{
+  width: 405px;
+  padding: 50px;
+  margin: 15px;
+  border-radius: 5%;
+  align-items: center;
+}
 .picture{
   width: 100%;
-  border:solid 2px rgb(215, 192, 148);
-  padding: 20px;
-}
+  }
 .tributo{
   grid-area: 2/1/2/2;
   }
@@ -90,9 +93,31 @@ ul a{
 }
 #projects a{
   text-decoration: none;
+  box-shadow: 2px 2px 1px rgba(195, 125, 32, 0.30);
+}
+#projects a:hover{
+  box-shadow: 2px 2px 4px rgba(195, 125, 32, 0.80);
 }
 .project-title{
   text-align: center;
   padding: 5px;
   margin-bottom: 40px;
+  }
+  footer{
+/*position: fixed;*/
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: rgba(47, 37, 29, 0.5);
+color: white;
+display: flex;
+justify-content: center;
+}
+#contact ul{
+  display: flex;
+  flex-direction: row;
+  }
+#contact li {
+  list-style: none;
+  padding-left: 30px;
   }
