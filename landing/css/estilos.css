@@ -1,61 +1,74 @@
 *{
-  margin: 0;
-  padding: 0px;
+  box-sizing: border-box;
   }
 
 body{
-    background-color: rgb(201, 113, 40);
+    margin: 0;
+    background-color: rgb(255, 123, 99);
     font-family: 'Nunito Sans', sans-serif;
     font-family: 'Indie Flower';
     min-width: 320px;
-    max-width: 2000px;
-      }
-  li{
-    list-style: none;
-  }
+    max-width: 1050px;
+    }
+
 #header{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+  width: 100%;
   padding: 20px;
-  background-image: linear-gradient(to left, rgb(74, 191, 114), rgb(16, 144, 249) ) ;
+  background-image: linear-gradient(to left, #4abf72, #DA558F );
   box-shadow: 0px 5px 15px rgba(64, 95, 142, 0.45);
   position: fixed;
   overflow: hidden;
   top: 0;
-}
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+  }
 
-.main{
-  padding: 20px;
-  margin-top: 110px;
-}
-header img{
-  width: 20%;
+#headerimg{
+  flex-wrap: wrap;
+  width: 10%;
   height: auto;
   border-radius: 20%;
-  padding: 10px;
-  margin-left: 15px;
 }
-
-ul{
+#header h1{
+  text-align: center;
+  font-size: 40px;
+}
+#nav-bar{
   display: flex;
-  justify-content: flex-end;
-  flex-flow:nowrap;
+  flex-direction: row;
+  background: rgba(235, 89, 62, 1.9);
+  width: 100%;
+  justify-content: center;
+  top: 150px;
+  position: fixed;
+  z-index: 1;
   }
-ul li a{
+
+
+#nav-bar a{
   font-family: 'Nunito Sans';
-  font-size: 200%;
-  font-weight: bolder;
+  font-size: 150%;
   text-decoration: none;
   padding: 15px;
   color: rgb(234, 241, 228);
-  }
-
-h1{
-  margin-top: 8em;
   text-align: center;
-  margin-top: 3em;
+
+  }
+  #nav-bar a:hover{
+    font-weight: bolder;
+    background-color: #c93419;
+    }
+  main{
+    padding: 20px;
+    z-index: 1;
+    position: absolute;
+    }
+
+#mextoys{
+  margin-top: 250px;
+  text-align: center;
+  font-size: 35px;
   font-variant: small-caps;
 }
 h2{
@@ -72,18 +85,22 @@ form{
   margin-top: 50px;
   margin-bottom: 50px;
 }
-.email{
+
+#email{
   width: 400px;
-}
+  border-radius: 8px;
+  background-color: #FFDAB2;
+  }
 form .button{
-  background: rgb(12, 65, 222);
+  background: rgb(25, 172, 88);
   border: none;
   padding: 5px;
   color: white;
-  border-radius: 10px;
+  border-radius: 8px;
+  margin-left: 3px;
 }
 .img1{
-   display: block;
+   display: flex;
    width: 100%;
    margin: auto;
    border-radius: 10%;
@@ -91,123 +108,32 @@ form .button{
 .img-caption{
     text-align: center;
 }
-.toy{
-  width: 50%;
-  height: auto;
-  }
-  p{
-    font-family: 'Nunito Sans'
-  }
-.Muestras{
-  margin: auto;
-  padding: 10px;
-  width: 80%;
-  background-color: rgb(43, 41, 43);
-  display: grid;
-  grid-gap: 10px;
-  grid-template-columns: 5em 2fr 2fr;
-  grid-template-rows: auto auto 1fr;
-  }
-#video{
-  width: 25%;
-  height: auto;
+.historia{
+  font-family: 'Nunito Sans', sans-serif;
 }
-
-.item1{
+.headermuestras > p{
+  text-align: center;
+}
+.row{
   display: flex;
-  align-items: center;
+  flex-wrap: nowrap;
+  padding: 0px 4px;
   justify-content: center;
-  grid-area: 1 / 1 / 2 / 2;
-  background-color: rgb(119, 240, 59);
-  margin-top: 5px;
-  }
+}
+.column{
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+  margin-bottom: 20px;
+  background-color: rgb(163, 233, 187);
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 40%;
+    }
 
 
-.item2{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 5px;
-  margin-top: 5px;
-  grid-area: 1 / 2 / 2 / 3;
-  background-color: rgb(119, 240, 59);
-  }
-.item3{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5px;
-  grid-area: 1 / 3 / 2 / 4;
-  background-color: rgb(119, 240, 59);
-  }
-.item4{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-area: 2/1/3/2;
-  background-color: rgb(131, 39, 195);
-
-}
-.item5{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 5px;
-  margin-top: 5px;
-  grid-area: 2/2/3/3;
-  background-color: rgb(131, 39, 195);
-
-}
-.item6{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5px;
-  grid-area: 2/3/3/4;
-  background-color: rgb(131, 39, 195);
-
-}
-.item7{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  grid-area: 3/1/4/2;
-  background-color: rgb(241, 126, 19);
-  margin-top: 5px;
-}
-.item8{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 5px;
-  margin-top: 5px;
-  grid-area: 3/2/4/3;
-  background-color: rgb(241, 126, 19);
-}
-.item9{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 5px;
-  grid-area: 3 /3 / 4 / 4;
-  background-color: rgb(241, 126, 19);
-}
-.item10{
-  grid-area: 5/2/6/4;
-  display: flex;
-  flex-flow: wrap;
-  align-items: center;
-}
-
-.ico{
-  width: 40%;
-  height: auto;
-  padding: 10px;
-
-}
 .pricing{
   width: 80%;
   display: flex;
@@ -220,11 +146,12 @@ form .button{
   font-family: "Tahoma", sans-serif;
   background: #222;
   color: #FFF;
-  padding: 8px;
+  padding: 12px;
   box-sizing: border-box;
   width: 25.3%;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-around;
   }
   .tabla-precios{
     background: rgb(211, 220, 244);
@@ -233,9 +160,10 @@ form .button{
     border:1px solid #555;
     border-radius: 10px;
     margin: 0;
-    padding: 0;
+    padding: 0px;
     transition: 0.3s;
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
     text-align: center;
     }
@@ -244,9 +172,9 @@ form .button{
       border-radius: 8px 8px 0px 0px;
       text-shadow: 0 4px 4px 5px rgb(2, 1, 2);
       font-weight: bold;
-    }
+      }
     .tabla-precios .headerX{
-      background: rgb(131, 39, 195);
+      background: rgb(199, 52, 116);
       box-shadow: 0 2px  rgba(11, 11, 11, 0.74);
       border-radius: 8px 8px 0px 0px;
       text-shadow: 0 2px 2px rgb(2, 2, 2);
@@ -272,49 +200,58 @@ form .button{
     }
     .button{
       background-color: #333;
+      color: white;
       border-radius: 3px;
       padding: 10px 15px;
       font-size: 15px;
       text-decoration: none;
     }
 
-
 footer{
-  background-color: rgb(20, 20, 15);
+  background-color: rgb(201, 115, 25);
   display: flex;
   justify-content: space-between;
 }
 footer .copy{
-  background-color: rgb(140, 19, 14);
+  background-color: rgb(204, 52, 25);
   text-align: left;
-  text-shadow: 2px 2px 2px rgb(186, 152, 74);
+  text-shadow: 2px 2px 2px rgb(255, 154, 135);
   padding: 15px;
   font-size: 25px;
 }
+footer .contact{
+  padding: 10px;
+  margin-left: 30px;
+  font-size: 30px;
+}
 
-@media (max-width: 800px){
+@media (max-width: 800px)and(min-width:600px){
   header{
     width: 100%;
     display: flex;
-    font-size: 90%;
+    font-size: 70%;
+    }
+    #nav-bar{
+      top: 150px;
+    }
+    .img1{
+       display: flex;
+       width: 80%;
+       margin: auto;
+       border-radius: 10%;
+    }
+    .main{
+      padding: 0;
+    }
+    .column{
+        flex: 40%;
+        max-width: 40%;
+    }
+    #video{
+      width: 75%;
+    }
 
-    }
-    figure{
-      display: none;
-      }
-    .nav{
-      align-items: center;
-      justify-content: center;
-    }
-    .nav ul {
-      display: flex;
-      flex-direction: column;
-    }
-    .Muestras{
-      display: flex;
-      flex-direction: column;
-      width: 2fr;
-  }
+
   .pricing ul li{
     display: flex;
     flex-direction: column;
@@ -330,9 +267,7 @@ footer .copy{
     flex-flow: wrap;
     align-items: center;
   }
-  .ico{
-    display: none;
-  }
+
   .col{
     display: flex;
     flex-flow: wrap;
@@ -341,9 +276,38 @@ footer .copy{
     justify-content: center;
     align-items: center;
   }
-  .item10{
-    width: 300px;
+}
+@media (max-width: 600px)and(min-width:450px){
+  #nav-bar{
+    top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #headerimg{
+    display: none;
+  }
+  .navlink{
+    font-size: 10px;
+  }
+  .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    footer .contact{
+      font-size: 20px;
+    }
+}
+@media (max-width: 450px)and (min-width:350px){
+  #nav-bar{
+    display: flex;
+    flex-direction: column;
+    font-size: 60%;
+    margin-top: ;
+  }
+  #nav-bar a{
     padding: 5px;
-    width: 100%;
+  }
+  footer .contact{
+    font-size: 15px;
   }
 }
