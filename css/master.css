@@ -141,9 +141,7 @@ justify-content: center;
   .work {
     display: grid;
     grid-template: 1fr;
-    self-align: center;
-    margin-left: auto;
-  }
+    }
   .work .project{
     padding: 20px;
   }
