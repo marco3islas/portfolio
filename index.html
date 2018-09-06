@@ -1,62 +1,125 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="es" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
-    <script src="//cdn.wordart.com/wordart.min.js" async defer></script>
-    <script https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script>
-    <link rel="stylesheet" href="css/master.css">
-    <title>Portafolio</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <title>Ahuilli -Juguetes tipicos mexicanos-</title>
   </head>
   <body>
-    <div class="container">
-    <header>
+      <div id="header">
+        <img id="headerimg" src="img/logo2.jpg" alt="Logo Piñata y Luchador">
+        <h1>Mexican toys</h1>
+      </div>
+      <div id="nav-bar" class="nav">
+              <a class="navlink" href="#Inicio">Inicio</a>
+              <a class="navlink" href="#Historia">Historia</a>
+              <a class="navlink" href="#Muestras">Muestras</a>
+              <a class="navlink" href="#Contacto">Contacto</a>
+      </div>
 
-        <div id="navbar">
-          <ul>
-            <li class="links"><a href="#welcome-section">Home</a></li>
-            <li class="links"><a href="#projects">Projects</a></li>
-            <li class="links"><a href="#contact">Contact</a></li>
+
+    <div class="main">
+      <div id="Inicio" class="Historia"  >
+        <h2  id="mextoys" >Juguetes típicos Mexicanos</h2>
+        <h2 >Artesania, Imaginación y Diversión.</h2><br>
+                 <form id="form" action="index.html" method="post">
+                   <input type="email" name="email" id="email" placeholder="Ingresa tu e-mail." required />
+                   <input type="button" name="button" id="button" value="Enviar" class="button"><br><br>
+                 </form><br><br>
+        <img  id="Historia" class="img1" src="https://rotativo.com.mx/assets//2016/01/60104115.jpg" alt="Colección juguetes mexicanos">
+        <div class="img-caption">Coleccion de juguetes típicos mexicanos.</div><br><br>
+        <p class="historia">El Juguete tradicional mexicano es una expresión representativa de la cultura mexicana. En su mayoría, éstos son elaborados artesanalmente a base de madera. Siendo un producto de exportación,.1​2​ Anualmente se entregan premios a los artesanos más destacados en el Concurso Nacional del Juguete Popular,3​ el cual es realizado por el Museo del Juguete Popular Mexicano "La Esquina".4​5​6​ A continuación se muestran algunos ejemplos de juguetes tradicionales:</p><br>
+      </div>
+
+      <!--Zona de rejilla-->
+
+      <!--Cabecera de la rejilla flex-->
+        <div class="headermuestras">
+              <h2 id="Muestras">These are some samples of Mexican Toys</h2>
+                <p>Majorly made a hand, and with recicled materials.</p>
+            </div>
+      <!--Rejilla de fotos-->
+
+      <div class="row">
+  <div class="column">
+    <img src="img/guitarras.jpg" style="width:100%">
+    <img src="img/juguetes-mexicanos-por.jpg" style="width:100%">
+    <img src="img/muñequita.jpg" style="width:100%">
+    <img src="http://cdn.kaltura.com/p/0/thumbnail/entry_id/0_wxkfomak/quality/80/width//height//src_x//src_y//src_w/NaN/src_h/NaN/vid_sec/0.jpg" style="width:100%">
+    <img src="img/puesto.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="https://s-media-cache-ak0.pinimg.com/originals/c0/cc/1d/c0cc1de09a3004b86720212ecc56762c.jpg" style="width:100%">
+    <img src="img/Tren_de_madera.jpg" style="width:100%">
+    <img src="img/trompos.png" style="width:100%">
+    <img src="img/marionetas.jpg" style="width:100%">
+    <img src="img/guitarras.jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="http://2.bp.blogspot.com/-XU-sJN_edLM/UaCoLDvZndI/AAAAAAAARQs/izauUyiJfro/s1600/420902_313128892082304_1495633377_n.jpg" style="width:100%">
+    <img src="http://cdn.kaltura.com/p/0/thumbnail/entry_id/0_wxkfomak/quality/80/width//height//src_x//src_y//src_w/NaN/src_h/NaN/vid_sec/0.jpg" style="width:100%">
+    <img src="img/puesto.jpg" style="width:100%">
+    <img src="img/juguetes-mexicanos-por.jpg" style="width:100%">
+    <img src="https://s-media-cache-ak0.pinimg.com/originals/c0/cc/1d/c0cc1de09a3004b86720212ecc56762c.jpg" style="width:100%">
+    <img src="img/Tren_de_madera.jpg" style="width:100%">
+  </div>
+</div>
+<div class="row"><iframe id="video" src="https://www.youtube.com/embed/yX7ebZ31dSA" frameborder="0" controls allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+      </div>
+
+      <!--Comienza el area de las tarjetas de precio-->
+
+      <div class="pricing">
+        <div class="col">
+          <ul class="tabla-precios">
+            <li class="headerT header2">Juguetes de Madera</li>
+            <li class="emfasis"><strong>$39.99</strong> /pice </li>
+            <li><strong>Crafts</strong></li>
+            <li><strong>Hand-Made</strong></li>
+            <li><strong>Lead free paint</strong></li>
+            <li class="emfasis"><a href="h" class="button">Sign Up</a></li>
           </ul>
         </div>
 
-    </header>
-    <div id="welcome-section">
+        <div class="col">
+          <ul class="tabla-precios best">
+            <li class="headerX">Juguetes de Trapo</li>
+            <li class="emfasis"><strong>$49.99</strong> /pice </li>
+            <li><strong>Crafts</strong></li>
+            <li><strong>Hand-Made</strong></li>
+            <li><strong>Lead free paint</strong></li>
+            <li class="emfasis"><a href="h" class="button">Sign Up</a></li>
+          </ul>
+        </div>
+
+       <div class="col">
+          <ul class="tabla-precios">
+            <li class="headerZ">Juguetes de Plástico</li>
+            <li class="emfasis"><strong>$89.99</strong> 10/pz </li>
+            <li><strong>Crafts</strong></li>
+            <li><strong>Hand-Made</strong></li>
+            <li><strong>Lead free paint</strong></li>
+            <li class="emfasis"><a href="h" class="button">Sign Up</a></li>
+          </ul>
+        </div>
+        </div>
 
 
-    <div class="backgroundimg"></div>
-      <h1 class="head-contet">Hi My name is  Mark</h1>
-      <p class="head-contet">And i'm a web developer!!!</p>
-      </div>
-    <div class="work" id="projects">
-      <h2 class="work-header">Here are some samples of my work...</h2>
-      <a href="portfolio/tributo/" target="_blank" class="project tributo">
-        <img class="picture" src="img/tributo.png" alt="imagen_tributo"> <div class="project-title">Tributo</div>
-       </a>
 
-       <a  href="formulario/formulario2.html" target="_blank" class="project formulario">
-         <img class="picture" src="img/form.png" alt="imagen_formulario"> <div class="project-title">Formulario</div>
-        </a>
+      <footer>
+        <div class="copy">
+          CopyRight
+        </div>
+        <div class="contact" id="Contacto">
 
-        <a  href="landing/index.html" target="_blank" class="project landing">
-          <img class="picture" src="img/landing.png" alt="imagen_landing"> <div class="project-title">Landing Page</div>
-         </a>
+            <a href="#Tweeter">Tweeter</a>
+            <a href="#Facebook">Facebook</a>
+            <a href="#Blog">Blog</a>
+            <a href="#E-mail">E-mail</a>
 
-         <a  href="tecnica/tech_page.html" target="_blank" class="project tech">
-           <img class="picture" src="img/tech.png" alt="imagen_technical"> <div class="project-title">Technical Page</div>
-          </a>
-    </div>
-    <footer>
-      <div id="contact">
-        <ul>
-          <li><a href="#Gmail">Gmail</a></li>
-          <li><a href="#GitHub">Github</a></li>
-          <li><a href="#CodePen">CodePen</a></li>
-          <li><a href="#Facebook">Facebook</a></li>
-        </ul>
-      </div>
-    </footer>
-    </div>
-    <script https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js></script>
-  </body>
+        </div>
+      </footer>
+    </body>
 </html>
