@@ -7,7 +7,7 @@ body{
     background-color: rgb(255, 123, 99);
     font-family: 'Nunito Sans', sans-serif;
     font-family: 'Indie Flower';
-    min-width: 320px;
+    min-width: 315px;
     }
 
 #header{
@@ -24,8 +24,8 @@ body{
   }
 
 #headerimg{
-  flex-wrap: wrap;
-  width: 10%;
+  flex-flow: wrap;
+  width: 150px;
   height: auto;
   border-radius: 20%;
 }
@@ -224,18 +224,21 @@ footer .contact{
   font-size: 30px;
 }
 
-@media (max-width: 800px)and(min-width:600px){
+@media (max-width: 800px){
   header{
     width: 100%;
     display: flex;
     font-size: 70%;
     }
+
     #nav-bar{
       top: 150px;
     }
     .img1{
        display: flex;
+       flex-wrap: wrap;
        width: 80%;
+       height: auto;
        margin: auto;
        border-radius: 10%;
     }
@@ -249,34 +252,18 @@ footer .contact{
     #video{
       width: 75%;
     }
+    .pricing{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .col{
+      width: 50%;
+    }
 
-
-  .pricing ul li{
-    display: flex;
-    flex-direction: column;
-  }
-  .pricing ul li a{
-    font-size: 100%;
-    padding: 5px;
-  }
-  .pricing{
-    margin-top: 15px;
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    align-items: center;
-  }
-
-  .col{
-    display: flex;
-    flex-flow: wrap;
-    flex-direction: column;
-    width: 90%;
-    justify-content: center;
-    align-items: center;
-  }
 }
-@media (max-width: 600px)and(min-width:450px){
+@media (max-width: 600px){
   #nav-bar{
     top: 150px;
     display: flex;
@@ -292,16 +279,25 @@ footer .contact{
         flex: 100%;
         max-width: 100%;
     }
+    .col{
+      width: 90%;
+    }
+
     footer .contact{
       font-size: 20px;
     }
 }
-@media (max-width: 450px)and (min-width:350px){
+@media (max-width: 450px)and (min-width:315px){
   #nav-bar{
     display: flex;
     flex-direction: column;
-    font-size: 60%;
-    margin-top: ;
+    font-size: 50%;
+    font-weight: 600;
+    margin-bottom: 50px;
+  }
+  #headerimg{
+    width: 10%;
+    height: 10%;
   }
   #nav-bar a{
     padding: 5px;
